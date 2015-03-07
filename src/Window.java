@@ -4,6 +4,8 @@ import java.util.HashMap;
 
 import javax.swing.*;
 
+//In Progress... current code not meant to be used
+
 public class Window {
 	public Window() {
 		JFrame frame = new JFrame("Music Library");

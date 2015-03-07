@@ -1,6 +1,12 @@
 import java.time.*;
 
+/**
+ * Represents a song
+ * 
+ * @author HansHalverson
+ */
 public class MusicFile {
+	
 	private int trackID;
 	private String name;
 	private String artist;
@@ -21,6 +27,8 @@ public class MusicFile {
 	private int bitRate;
 	private LocalDateTime releaseDate;
 	private String file;
+	
+	//All getters and setters:
 	
 	public MusicFile() {};
 	
@@ -104,6 +112,9 @@ public class MusicFile {
 	
 	public void setFile (String f) {file = f;}
 	
+	/**
+	 * Prints all music file information to the console, for testing purposes
+	 */
 	public void printMusicFile () {
 		System.out.println("Track ID: " + getTrackID() +
 						   "\nName: " + getName() +
