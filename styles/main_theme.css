@@ -1,0 +1,153 @@
+.genreButton {
+	-fx-background-color: linear-gradient(to bottom, #F0F0F0, #D4D4D4);
+	-fx-background-radius: 0 0 0 0;
+	-fx-border-color: #565656;
+	-fx-border-width: 0 0.5 0 0.5;
+	-fx-text-fill: #565656;
+	-fx-font: normal 13 'Helvetica Neue Roman';
+	-fx-focus-traversable: false;
+}
+
+.genreButton:selected {
+	-fx-background-color: linear-gradient(to bottom, #565656, #686868);
+	-fx-text-fill: #D1D1D1;
+}
+
+.genreButton:pressed {
+	-fx-background-color: linear-gradient(to bottom, #565656, #686868);
+	-fx-text-fill: #D1D1D1;
+}
+
+#leftGenreButton {
+	-fx-background-radius: 10 0 0 10;
+	-fx-border-radius: 10 0 0 10;
+	-fx-border-width: 0 0.5 0 0;
+}
+
+#rightGenreButton {
+	-fx-background-radius: 0 10 10 0;
+	-fx-border-radius: 0 10 10 0;
+	-fx-border-width: 0 0 0 0.5;
+}
+
+#playPauseButton {
+	-fx-shape: "M 100 300 L 300 200 L 100 100 z";
+	-fx-background-color: linear-gradient(to bottom, #565656, #686868);
+	-fx-scale-x: 1.2;
+	-fx-focus-traversable: false;
+}
+
+#playPauseButton:selected {
+	-fx-shape: "M 100 100 L 100 300 L 200 300 L 200 100 z M 300 100 L 300 300 L 400 300 L 400 100 z";
+}
+
+#playPauseButton:pressed, #skipForwardButton:pressed, #skipBackwardButton:pressed {
+	-fx-background-color: linear-gradient(to bottom, #353535, #474747) ;
+}
+
+#skipForwardButton {
+	-fx-shape: "M 100 100 L 300 200 L 100 300 z M 275 100 L 475 200 L 275 300 z";
+	-fx-background-color: linear-gradient(to bottom, #565656, #686868);
+	-fx-scale-x: 1.6;
+	-fx-scale-y: 0.7;
+	-fx-focus-traversable: false;
+}
+
+#skipBackwardButton {
+	-fx-shape: "M -100 100 L -300 200 L -100 300 z M -275 100 L -475 200 L -275 300";
+	-fx-background-color: linear-gradient(to bottom, #565656, #686868);
+	-fx-scale-x: 1.6;
+	-fx-scale-y: 0.7;
+	-fx-focus-traversable: false;
+}
+
+#songTitleText {
+	-fx-font: 16 Helvetica;
+}
+
+#artistAlbumText {
+	-fx-font: 16 Helvetica;
+}
+
+#currentTimeText {
+	-fx-font: 12 Helvetica;
+}
+
+#totalTimeText {
+	-fx-font: 12 Helvetica;
+}
+
+#songScroller .thumb {
+	-fx-background-color: #565656;
+	-fx-background-radius: 1;
+	-fx-scale-x: 0.2;
+	-fx-focus-traversable: false;
+}
+
+#songScroller .track {
+	-fx-background-color: #F1F1F1;
+	-fx-scale-y: 0.5;
+}
+
+#currentTrackRegion {
+	-fx-background-color: #CCCCCC;
+	-fx-background-radius: 0 0 50 50;
+	-fx-effect: dropshadow(gaussian, #AAAAAA, 10, 0, 10, 10);
+}
+
+#upperMiddlePane {
+	-fx-background-color: #FFFFFF;
+	-fx-border-color: #C7C7C7;
+	-fx-border-style: solid outside;
+	-fx-border-width: 0 1 0 1;
+}
+
+#subgenresList:focused {
+	
+}
+
+#artistAlbumTree:focused {
+	
+}
+
+#songsTable {
+	-fx-border-color: #FFFFFF;
+	-fx-border-width: 0;
+}
+
+.list-view *.scroll-bar:vertical *.increment-button,
+.list-view *.scroll-bar:vertical *.decrement-button,
+.list-view *.scroll-bar:horizontal *.increment-button,
+.list-view *.scroll-bar:horizontal *.decrement-button,
+.tree-view *.scroll-bar:vertical *.increment-button,
+.tree-view *.scroll-bar:vertical *.decrement-button,
+.tree-view *.scroll-bar:horizontal *.increment-button,
+.tree-view *.scroll-bar:horizontal *.decrement-button,
+#songsTable *.scroll-bar:vertical *.increment-button,
+#songsTable *.scroll-bar:vertical *.decrement-button,
+#songsTable *.scroll-bar:horizontal *.increment-button,
+#songsTable *.scroll-bar:horizontal *.decrement-button {
+    -fx-background-color: null;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+.list-view *.scroll-bar:vertical *.increment-arrow, 
+.list-view *.scroll-bar:vertical *.decrement-arrow,
+.list-view *.scroll-bar:horizontal *.increment-arrow, 
+.list-view *.scroll-bar:horizontal *.decrement-arrow,
+.tree-view *.scroll-bar:vertical *.increment-arrow, 
+.tree-view *.scroll-bar:vertical *.decrement-arrow,
+.tree-view *.scroll-bar:horizontal *.increment-arrow, 
+.tree-view *.scroll-bar:horizontal *.decrement-arrow,
+#songsTable *.scroll-bar:vertical *.increment-arrow,
+#songsTable *.scroll-bar:vertical *.decrement-arrow,
+#songsTable *.scroll-bar:horizontal *.increment-arrow,
+#songsTable *.scroll-bar:horizontal *.decrement-arrow {
+    -fx-background-color: null;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+    -fx-shape: null;
+}
